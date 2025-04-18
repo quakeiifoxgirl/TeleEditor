@@ -8,6 +8,11 @@ namespace BadTextEditor
         static int CurrentLine = 0;
         static int ModifiedLines;
 
+        // Versioning
+        static readonly int MajorVersion = 0;
+        static readonly int MinorVersion = 1;
+        static readonly string Version = $"{MajorVersion}.{MinorVersion}";
+
         static void Main(string[] args)
         {
             Lines = new string[64000];
@@ -17,11 +22,13 @@ namespace BadTextEditor
                 string input = Console.ReadLine();
                 string[] inputsplit = input.ToLower().Split(' ');
                 Console.Clear();
-
                 switch(inputsplit[0])
                 {
                     default:
                         Console.WriteLine($"Command {inputsplit[0]} is not recognized\nType 'h' and return for command list");
+                        break;
+                    case "v":
+                        Console.WriteLine($"TeletypEditor Version {Version}\nProgrammed by quakeiifoxgirl");
                         break;
                     case "h":
                         Console.WriteLine("w - Write as String\np - Print all lines in list\ns - Select numbered line\nwt - Write to disk");
