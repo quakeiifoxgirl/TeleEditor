@@ -27,6 +27,21 @@ namespace BadTextEditor
                     default:
                         Console.WriteLine($"Command {inputsplit[0]} is not recognized\nType 'h' and return for command list");
                         break;
+                    case "l":
+                        if(inputsplit.Length >= 2)
+                        {
+                            if (File.Exists(inputsplit[1]))
+                            {
+                                Lines = File.ReadAllLines(inputsplit[1]);
+                                Console.WriteLine("File Loaded!");
+                            }
+                            else
+                            {
+                                Console.WriteLine("File does not exist!");
+                            }
+                            
+                        }
+                        break;
                     case "v":
                         Console.WriteLine($"TeletypEditor Version {Version}\nProgrammed by quakeiifoxgirl");
                         break;
