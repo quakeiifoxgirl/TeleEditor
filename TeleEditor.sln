@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35913.81 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadTextEditor", "BadTextEditor.csproj", "{3437BADF-9FD9-4AC5-9C8E-DE0F70C0B34B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeleEditor", "TeleEditor.csproj", "{3437BADF-9FD9-4AC5-9C8E-DE0F70C0B34B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
